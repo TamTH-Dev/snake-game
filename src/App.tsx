@@ -13,14 +13,12 @@ const getRandomCoordinates: () => [number, number] = () => {
   return [x, y]
 }
 
-interface Demo {
+const initialStates: {
   snakeDots: [number, number][]
   speed: number
   direction: TRIGHT | TLEFT | TUP | TDOWN
   food: () => [number, number]
-}
-
-const initialStates: Demo = {
+} = {
   snakeDots: [
     [0, 0],
     [2, 0],
